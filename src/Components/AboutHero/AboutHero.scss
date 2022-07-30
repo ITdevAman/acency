@@ -1,0 +1,30 @@
+.AboutHeroSection {
+  width: 100%;
+  background: #000;
+  height: auto;
+
+  .AboutHeroSectionTitle {
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+
+    & h1 {
+      font-family: 'Circe', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      padding-top: 5%;
+      padding-bottom: 14%;
+    }
+  }
+}
+
+@media screen and (max-width:425px){
+  .AboutHeroSectionTitle{
+    & h1 {
+      font-size: 24px;
+    }
+  }
+}

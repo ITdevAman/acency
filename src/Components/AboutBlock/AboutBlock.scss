@@ -1,0 +1,61 @@
+
+.AboutBlockSection {
+  width: 100%;
+  position: relative;
+  background: #000;
+
+  .AboutBlockSectionBlock {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 3%;
+    &_box {
+      position: relative;
+      margin-top: 20%;
+
+      & h1 {
+        font-family: 'Circe', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        color: #FFFFFF;
+        margin: 10% 0;
+      }
+
+      & p {
+        font-family: 'Circe', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: #FFFFFF;
+      }
+    }
+  }
+}
+
+.aboutIcon {
+  color: white;
+  font-size: 60px;
+}
+
+@media screen and (max-width:768px){
+  .AboutBlockSectionBlock{
+    width: 100%;
+    &_box{
+      margin-top: 10%;
+    }
+  }
+  .aboutIcon{
+    font-size: 50px;
+  }
+}
+@media screen and (max-width:425px){
+  .AboutBlockSectionBlock{
+    &_box{
+      margin-top: 5%;
+    }
+  }
+  .aboutIcon{
+    font-size: 40px;
+  }
+}

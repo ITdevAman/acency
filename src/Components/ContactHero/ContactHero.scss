@@ -1,0 +1,129 @@
+.ContactHeroSection {
+  width: 100%;
+  padding: 10% 0;
+  background: #000;
+  position: relative;
+
+  .ContactHeroSectionBlock {
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+
+    & h1 {
+      margin-top: -5%;
+      font-family: 'Circe', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+
+    &_box {
+      & p {
+        margin-top: 10%;
+        font-family: 'Circe', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        color: #FFFFFF;
+      }
+
+      &_a {
+        font-family: 'Circe', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 25px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+      }
+
+      &_link {
+        font-family: 'Circe', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 25px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+      }
+
+      & button {
+        font-family: 'Circe', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        color: #FFFFFF;
+        background: transparent;
+        border-bottom: 1px solid white;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        padding: 5px 0;
+      }
+    }
+
+    &_map {
+      & p {
+        margin-top: 10%;
+        font-family: 'Circe', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        color: #FFFFFF;
+      }
+
+      &_carta {
+        width: 100%;
+        height: 35vh;
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width:768px){
+  .ContactHeroSectionBlock_map_carta {
+    height: 45vh
+  }
+  .ContactHeroSectionBlock{
+    width: 100%;
+    & h1 {
+      font-size: 24px;
+    }
+  }
+}
+@media screen and (max-width:768px){
+
+}
+@media screen and (max-width:414px){
+  .ContactHeroSectionBlock_box{
+    &_a{
+      font-size: 20px;
+    }
+  }
+}
+@media screen and (max-width:425px){
+  .ContactHeroSectionBlock_box{
+    &_link{
+      font-size: 15px;
+    }
+  }
+}
+@media screen and (max-width:320px){
+  .ContactHeroSectionBlock{
+    & h1 {
+      font-size: 24px;
+    }
+  }
+  .ContactHeroSectionBlock_box{
+    &_a{
+      font-size: 18px;
+    }
+  }
+}
+@media screen and (max-width:768px){
+
+}

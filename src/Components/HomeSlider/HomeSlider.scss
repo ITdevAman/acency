@@ -1,0 +1,204 @@
+.HomeSliderSection {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  background: #000;
+  padding: 10% 0;
+
+  .slick-next:before {
+    position: absolute;
+    margin-top: 215px;
+    margin-left: -800px;
+    @media (max-width: 1024px) {
+      margin-left: -586px;
+      margin-top: 218px;
+    }
+  }
+
+  .slick-prev:before {
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 800px;
+    @media (max-width: 1024px) {
+      margin-left: 586px;
+      margin-top: 218px;
+    }
+  }
+
+  .slick-dots li button:before {
+    color: white !important;
+    content: "" !important;
+    width: 15px !important;
+    height: 2px !important;
+    background: white;
+    opacity: .6 !important;
+    margin-top: 10px;
+  }
+
+  .slick-dots {
+    margin-left: 800px !important;
+    width: 300px !important;
+    height: 40px !important;
+    position: relative !important;
+    overflow: hidden !important;
+    opacity: 1 !important;
+    @media (max-width: 1024px) {
+      margin-left: 578px !important;
+      width: 200px !important;
+    }
+  }
+
+  .slick-current {
+    transform: scale(1.05) !important;
+    opacity: 1 !important;
+    @media(max-width: 768px) {
+      transform: scale(.95) !important;
+    }
+  }
+
+  .HomeSliderSectionBlock {
+    width: 100%;
+    position: relative;
+
+    .HomeSliderSectionBlockTitle {
+      width: 100%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 5%;
+
+      & h2 {
+        width: 40%;
+        font-family: 'Circe', sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 59px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        @media (max-width: 1024px) {
+          width: 70%;
+        }
+        @media (max-width: 768px) {
+          width: 100%;
+          font-size: 24px;
+        }
+        @media(max-width: 425px) {
+          font-size: 18px;
+          width: 80%;
+          line-height: 30px;
+        }
+
+      }
+    }
+
+
+    .HomeSliderSectionBlockSlider {
+      position: relative;
+      width: 130%;
+      margin-left: -15%;
+    }
+  }
+}
+
+
+.CARD {
+  .ProjectHeroSectionBlockCard {
+    background: transparent;
+    width: 100%;
+    position: relative;
+    height: 400px;
+    transform: scale(.9);
+    transition: .4s;
+    opacity: .9;
+    overflow: hidden;
+
+    &:hover:before {
+      transform: translateY(0);
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:hover .ProjectHeroSectionBlockCard_block p {
+      margin-top: .2%;
+    }
+
+    &:hover .ProjectHeroSectionBlockCard_block {
+      transform: translateY(125%);
+    }
+
+    &:hover .ProjectHeroSectionBlockCard_block_desc {
+      margin-top: 0;
+    }
+    &_block {
+      transition: .4s;
+      transform: translateY(120%);
+      position: absolute;
+      z-index: 5;
+      background: transparent;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & h1 {
+        width: 90%;
+        font-family: 'Circe', sans-serif;
+        font-weight: 600;
+        font-size: 17px;
+        text-align: center;
+        color: #FFFFFF;
+        margin: 0 auto;
+        position: relative;
+      }
+
+      &_desc {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 140px;
+        transition: .4s;
+        @media (max-width: 1024px) {
+          margin-top: 10px;
+        }
+
+        & p {
+          width: 90%;
+          font-family: 'Circe', sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          text-align: center;
+          color: #FFFFFF;
+          transition: .3s;
+        }
+
+        & a {
+          font-family: 'Circe', sans-serif;
+          font-weight: 400;
+          font-size: 18px;
+          text-align: center;
+          border: none;
+          color: white;
+          background: transparent;
+          text-transform: uppercase;
+
+          .icon {
+            font-size: 20px;
+            margin: 0 10px;
+          }
+        }
+      }
+    }
+    & img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 2;
+    }
+  }
+
+}

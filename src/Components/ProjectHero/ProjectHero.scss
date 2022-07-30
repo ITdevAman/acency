@@ -1,0 +1,195 @@
+.ProjectHeroSection {
+  width: 100%;
+  position: relative;
+  height: auto;
+  background: #000;
+
+  .ProjectHeroSectionBlock {
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+
+    & h1 {
+      width: 50%;
+      padding-top: 7%;
+      padding-bottom: 5%;
+      font-family: 'Circe', sans-serif;
+      font-weight: 400;
+      font-size: 36px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      @media (max-width: 992px) {
+        font-size: 24px;
+        width: 70%;
+      }
+      @media (max-width: 425px) {
+        width: 100%;
+        font-size: 20px;
+      }
+    }
+
+    &Card {
+      width: 100%;
+      position: relative;
+      height: 45vh;
+      overflow: hidden;
+      margin: 12px 0;
+
+      &:hover:before {
+        transform: translateY(0);
+      }
+
+      &:hover .ProjectHeroSectionBlockCard_block p {
+        margin-top: .2%;
+      }
+
+      &:hover .ProjectHeroSectionBlockCard_block {
+        transform: translateY(65%);
+        @media (max-width: 768px) {
+          transform: translateY(20%);
+        }
+      }
+
+      &:hover .ProjectHeroSectionBlockCard_block_desc {
+        margin-top: 0;
+      }
+
+      &:before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: #000;
+        z-index: 3;
+        opacity: .6;
+        border: 1.5px solid rgba(255, 255, 255, 0.3);
+        transition: .4s;
+        transform: translateY(100%);
+      }
+
+      &:after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: #000;
+        z-index: 3;
+        opacity: .4;
+        border: 1.5px solid rgba(255, 255, 255, 0.3);
+        transition: .4s;
+        display: none;
+        @media (max-width: 425px) {
+          display: block;
+        }
+      }
+
+      &_block {
+        transition: .4s;
+        transform: translateY(80%);
+        position: absolute;
+        z-index: 5;
+        background: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media (max-width: 768px) {
+          transform: translateY(60%);
+        }
+        @media (max-width: 425px) {
+          transform: translateY(40%);
+        }
+
+        & h1 {
+          width: 90%;
+          font-family: 'Circe', sans-serif;
+          font-weight: 600;
+          font-size: 17px;
+          text-align: center;
+          color: #FFFFFF;
+          margin: 0 auto;
+          position: relative;
+          @media (max-width: 992px) {
+            font-size: 16px;
+          }
+        }
+
+        &_desc {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 140px;
+          transition: .4s;
+          @media (max-width: 992px) {
+            margin-top: 100px;
+          }
+          @media (max-width: 425px) {
+            margin-top: 0;
+          }
+
+          & p {
+            width: 90%;
+            font-family: 'Circe', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            text-align: center;
+            color: #FFFFFF;
+            transition: .3s;
+          }
+
+          & a {
+            font-family: 'Circe', sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            text-align: center;
+            border: none;
+            color: white;
+            background: transparent;
+            text-transform: uppercase;
+
+            .icon {
+              font-size: 20px;
+              margin: 0 10px;
+            }
+          }
+        }
+      }
+
+      & img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 2;
+      }
+    }
+  }
+
+  .ProjectHeroSectionBlock_btn {
+    display: flex;
+    justify-content: center;
+
+    & button {
+      font-family: 'Circe', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      background: transparent;
+      padding: 24px 40px;
+      border: 2px solid #FFFFFF;
+      transition: .4s;
+      margin-top: 4%;
+
+      &:hover {
+        background: white;
+        color: black;
+      }
+    }
+  }
+}

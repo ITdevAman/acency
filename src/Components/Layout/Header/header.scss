@@ -1,0 +1,202 @@
+.HeaderSection {
+  width: 100%;
+  position: relative;
+  background: black;
+  padding: 5px 0;
+
+  .HeaderSectionBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &Logo {
+      width: 25%;
+      position: relative;
+    }
+
+    &Navbar {
+      width: 75%;
+      padding-right: 6%;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @media(max-width: 1024px) {
+        padding-right: 0;
+      }
+      @media(max-width: 768px) {
+        display: none;
+      }
+
+      &Menu {
+        margin-left: 12%;
+      }
+    }
+  }
+}
+
+.HeaderLink {
+  font-family: 'Circe', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin: 0 20px;
+  text-decoration: none;
+}
+
+.IntlBtn {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  & h3 {
+    font-family: 'Circe', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    color: #FFFFFF;
+    margin-left: 5%;
+    margin-right: 15px;
+    text-decoration: none;
+    margin-top: 5%;
+  }
+
+  .btnIntlFalse {
+    font-family: 'Circe', sans-serif;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 15px;
+    line-height: 24px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    margin-left: 10px;
+    background: transparent;
+    border: none;
+    transition: .4s;
+
+    &:hover {
+      transform: translateY(-8px);
+      opacity: .8;
+    }
+  }
+
+  .btnIntlTrue {
+    background: transparent;
+    border: none;
+    font-family: 'Circe', sans-serif;
+    font-style: normal;
+    margin-left: 10px;
+    font-weight: 350;
+    font-size: 15px;
+    line-height: 24px;
+    color: #FFFFFF;
+    border-bottom: 1px solid white;
+  }
+}
+
+.SearchHeader {
+  position: relative;
+  padding: 1px;
+
+  .input {
+    z-index: 3;
+    border-bottom: 1px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: transparent;
+    font-family: 'Circe', sans-serif;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 15px;
+    line-height: 24px;
+    color: #FFFFFF;
+    outline: none;
+    width: 220px;
+  }
+
+  .divTrue {
+    z-index: 1;
+    position: absolute;
+    background: transparent;
+
+    &:before {
+      z-index: 2;
+      position: absolute;
+      content: 'ПОИСК';
+      font-family: 'Circe', sans-serif;
+      font-style: normal;
+      font-weight: 350;
+      font-size: 15px;
+      color: #FFFFFF;
+    }
+  }
+
+  .divFalse {
+    z-index: 1;
+    position: absolute;
+    background: transparent;
+    opacity: 0;
+  }
+}
+
+.IngVector {
+  position: absolute;
+  right: 5px;
+  margin-top: 2%;
+  width: 18px;
+  z-index: 5;
+}
+@media(max-width: 1024px) {
+
+  .HeaderSectionBlockLogo {
+    width: 10%;
+    position: relative;
+
+    & img {
+      width: 150%;
+      object-fit: cover;
+    }
+
+    @media(max-width: 768px) {
+      width: 23%;
+    }
+
+  }
+  .HeaderSectionBlockNavbarMenu {
+    & a {
+      & a {
+        font-size: 13px;
+      }
+    }
+  }
+  .btnIntlTrue {
+    font-size: 13px;
+  }
+  .btnIntlFalse {
+    font-size: 13px;
+  }
+  .HeaderSectionBlockNavbarMenu {
+    margin-left: 11%;
+  }
+  .HeaderSectionBlockLogo{
+    padding-right: 0;
+  }
+  .IntlBtn h3 {
+    display: none;
+  }
+}
+@media(max-width: 768px) {
+
+
+  .IntlBtn{
+    display: none;
+  }
+}
+@media(max-width: 425px) {
+  .HeaderSectionBlockLogo{
+    width: 50%;
+  }
+}

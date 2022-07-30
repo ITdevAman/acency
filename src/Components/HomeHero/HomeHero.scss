@@ -1,0 +1,220 @@
+.heroImg {
+  width: 100%;
+  position: absolute;
+  height: 80vh;
+
+  & img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  //background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 71.06%, #000000 100%), #E9E9E9;
+}
+.HeroSection {
+  width: 100%;
+  height: 130vh;
+  position: relative;
+  background: #000;
+
+  //background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 71.06%, #000000 100%), #E9E9E9;
+}
+
+.heroBlock {
+  z-index: 10;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  .heroBlock {
+    margin-top: 14%;
+    width: 57%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    & h1 {
+      font-family: 'Circe', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 38px;
+      line-height: 59px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+
+      @media(max-width: 425px) {
+        font-size: 20px;
+        line-height: 26px;
+      }
+    }
+
+    & p {
+      font-family: 'Circe', sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 29px;
+      text-align: center;
+      color: #FFFFFF;
+
+      @media(max-width: 425px) {
+        font-size: 15px;
+      }
+
+
+    }
+
+    & button {
+      font-family: 'Circe', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      background: transparent;
+      padding: 24px 40px;
+      border: 2px solid #FFFFFF;
+      transition: .4s;
+      margin-top: 7%;
+      @media(max-width: 768px) {
+        padding: 16px 20px;
+        font-size: 14px;
+      }
+      @media(max-width: 425px) {
+        padding: 12px 15px;
+      }
+
+      &:hover {
+        background: white;
+        color: black;
+      }
+    }
+  }
+}
+.heroBlockCard {
+  z-index: 10;
+  position: relative;
+  margin: 9% auto;
+  width: 80%;
+  height: 300px;
+  @media(max-width: 1024px) {
+    width: 100%;
+  }
+
+  .heroBlockCardBLock {
+    padding: 5px 20px;
+    background: #101010;
+    opacity: .9;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    width: 100%;
+    @media(max-width: 768px) {
+      margin: 14px 0;
+    }
+    @media(max-width: 768px) {
+      width: 80%;
+      position: relative;
+      margin: 10px auto;
+    }
+    @media(max-width: 375px) {
+      padding: 0 10px;
+    }
+
+    &Box {
+      display: flex;
+      justify-content: space-between;
+      @media(max-width: 425px) {
+        align-items: center;
+      }
+
+      & h1 {
+        font-family: 'Circe', sans-serif;
+        font-style: normal;
+        font-weight: 350;
+        font-size: 60px;
+        line-height: 118px;
+        color: #FFFFFF;
+        @media(max-width: 425px) {
+          font-size: 24px;
+        }
+
+      }
+
+      & img {
+        object-fit: cover;
+        width: 40%;
+        @media(max-width: 1024px) {
+          width: 50%;
+        }
+        @media(max-width: 425px) {
+          width: 25%;
+          height: 30%;
+        }
+      }
+    }
+
+    & p {
+      font-family: 'Circe', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 29px;
+      margin-top: 20px;
+      color: #FFFFFF;
+      @media(max-width: 425px) {
+        margin-top: 0;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .HeroSection{
+    height: 113vh;
+  }
+}
+@media screen and (max-width: 992px){
+
+}
+@media screen and (max-width: 768px){
+  .HeroSection{
+    height: 140vh;
+  }
+  .heroBlock{
+    .heroBlock{
+      width: 100%;
+      & h1 {
+        font-size: 22px;
+      }
+      & p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 576px){
+  .HeroSection{
+    height: 190vh;
+  }
+}
+@media screen and (max-width: 425px){
+  .HeroSection{
+    height: 140vh;
+  }
+}
+@media screen and (max-width: 414px){
+
+}
+@media screen and (max-width: 375px){
+
+}
+@media screen and (max-width: 320px){
+  .HeroSection{
+    height: 150vh;
+  }
+}

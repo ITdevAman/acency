@@ -1,0 +1,263 @@
+.HomeAboutSection {
+  width: 100%;
+  background: white;
+
+  .HomeAboutSectionBlock {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+
+    &Title {
+      width: 90%;
+      position: relative;
+      padding: 7% 0;
+
+      & h1 {
+        font-family: 'Circe', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 34px;
+        color: #000000;
+
+        & span {
+          font-weight: 700;
+        }
+      }
+
+      &_desc {
+        margin-top: 5%;
+        display: flex;
+        align-items: center;
+
+        &_line {
+          width: 14%;
+          height: 2px;
+          background: #000;
+        }
+
+        & p {
+          margin-left: 4%;
+          width: 80%;
+          font-family: 'Circe', sans-serif;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 20px;
+          color: #000000;
+          @media(max-width: 425px) {
+            width: 100%;
+            font-size: 15px;
+          }
+        }
+      }
+
+    }
+
+    &Img {
+      margin-left: 20px;
+      margin-top: -10%;
+      position: absolute;
+      width: 390px;
+      height: 600px;
+      background: red;
+      z-index: 10;
+      overflow: hidden;
+
+      &_img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      &:before {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        content: "";
+        background: #000;
+        transform: rotate(-45deg) scale(2) translateY(-50%);
+        z-index: 4;
+      }
+
+      &:after {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        content: "";
+        background: rgba(28, 28, 28, 0.71);
+        left: 0;
+        top: 0;
+        z-index: 3;
+      }
+    }
+  }
+}
+
+.HomeAboutSection2 {
+  width: 100%;
+  position: relative;
+  background: #000;
+  padding-bottom: 5%;
+
+  .HomeAboutSection2Block {
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+
+    &Box {
+      padding-top: 3%;
+
+      &Card {
+        & h2 {
+          font-family: 'Circe', sans-serif;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 40px;
+          color: #FFFFFF;
+        }
+
+        & p {
+          font-family: 'Circe', sans-serif;
+          font-style: normal;
+          font-weight: 350;
+          font-size: 15px;
+          color: #FFFFFF;
+        }
+      }
+
+      & button {
+        font-family: 'Circe', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background: transparent;
+        padding: 24px 40px;
+        border: 2px solid #FFFFFF;
+        transition: .4s;
+        margin-top: 4%;
+        &:hover {
+          background: white;
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+.ImgLogo {
+  left: 17%;
+  bottom: 10%;
+  position: absolute;
+  z-index: 5;
+}
+
+
+@media screen and (max-width: 1024px){
+  .HomeAboutSectionBlock{
+    &Img{
+      margin-left: -20px;
+      margin-top: -5%;
+      &:before{
+        display: none;
+      }
+    }
+  }
+
+}
+@media screen and (max-width: 992px){
+  .HomeAboutSectionBlockImg{
+    margin-left: -55px;
+    height: 497px;
+  }
+}
+@media screen and (max-width: 768px){
+  .HomeAboutSectionBlock{
+    width: 100%;
+    &Title{
+      width: 100%;
+      padding-top: 4%;
+      padding-bottom: 15%;
+      & h1 {
+        font-size: 24px;
+      }
+    }
+    &Img{
+        margin-left: -20px;
+        margin-top: -5%;
+        &:before{
+          display: block;
+          background: white;
+        }
+      }
+  }
+  .HomeAboutSectionBlockImg{
+    margin-left: 23%;
+    margin-top: -15%;
+    height: 460px;
+  }
+  .HomeAboutSection2BlockBox{
+    padding-top: 69%;
+    padding-left: 16%;
+  }
+}
+@media screen and (max-width: 576px){
+  .HomeAboutSectionBlock{
+    &Title{
+      padding-bottom: 25%;
+    }
+  }
+  .HomeAboutSectionBlockImg{
+    margin-left: 13%;
+    margin-top: -24%;
+  }
+  .HomeAboutSection2Block{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 425px){
+  .HomeAboutSectionBlock{
+    &Title{
+      padding-bottom: 25%;
+      & h1 {
+        font-size: 20px;
+      }
+    }
+  }
+  .HomeAboutSectionBlockImg{
+    margin-left: 10%;
+    width: 80%;
+    height: 390px;
+    margin-top: -26%;
+  }
+  .HomeAboutSection2BlockBox{
+    padding-top: 79%;
+    padding-left: 0;
+    padding-right: 0;
+    & button {
+      padding: 12px 16px;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+}
+@media screen and (max-width: 375px){
+  .HomeAboutSection2BlockBox {
+    padding-top: 90%;
+    &Card{
+      & h2 {
+        font-size: 24px;
+      }
+    }
+    & button {
+      font-weight: 300;
+      border: 1px solid white;
+    }
+  }
+}
+@media screen and (max-width: 320px){
+  .HomeAboutSection2BlockBox {
+    padding-top: 120%;
+  }
+}
